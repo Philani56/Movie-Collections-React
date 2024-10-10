@@ -1,0 +1,25 @@
+.movie-display{
+    margin-top: 30px;
+}
+.movie-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+    color: #747474;
+}
+.movie-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+.food-item-desc{
+    color: #676767;
+    font-size: 12px;
+}
+.food-item-price{
+    color: red;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0px;
+}

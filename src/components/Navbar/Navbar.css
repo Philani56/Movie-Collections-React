@@ -1,0 +1,120 @@
+.navbar {
+    padding: 20px 40px; /* Increased padding for better spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+.navbar .logo {
+    width: 150px; /* Logo size */
+    transition: transform 0.3s; /* Add hover effect on logo */
+}
+
+.navbar .logo:hover {
+    transform: scale(1.05); /* Slightly increase logo size on hover */
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Increased gap for better spacing */
+    color: white; /* Darker text color for readability */
+    font-size: 16px;
+}
+
+.navbar-menu li {
+    cursor: pointer;
+    transition: color 0.3s; /* Transition for color change */
+}
+
+.navbar-menu li:hover {
+    color: red; /* Change text color on hover */
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Reduced gap for better spacing */
+}
+
+.navbar button {
+    background: red; /* Button color */
+    font-size: 16px;
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 30px;
+    border-radius: 50px; /* Rounded button */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Add transform effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for button */
+}
+
+.navbar button:hover {
+    background-color: #fff; /* Change background on hover */
+    color: red; /* Change text color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid red; /* Active link styling */
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: red; /* Notification dot color */
+    border-radius: 50%; /* Make it a perfect circle */
+    top: -8px;
+    right: -8px;
+}
+@media (max-width:1050px){
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap: 20px;
+        font-size: 17px;
+    }
+    .navbar-right{
+        gap: 30px;
+    }
+    .navbar-right img{
+        width: 22px;
+    }
+    .navbar-right button{
+        padding: 8px 25px;
+    }
+}
+@media (max-width:900px){
+    .navbar .logo{
+        width: 140px;
+    }
+    .navbar-menu{
+        gap: 15px;
+        font-size: 16px;
+    }
+    .navbar-right{
+        gap: 20px;
+    }
+    .navbar-right img{
+        width: 20px;
+    }
+    .navbar-right button{
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+@media (max-width:750px){
+    .navbar-menu{
+        display: none;
+    }
+}
